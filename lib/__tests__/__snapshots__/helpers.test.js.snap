@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ensureTrailingSlash() should add a trailing slash 1`] = `"/lorem/ipsum/"`;
+
+exports[`ensureTrailingSlash() should not add a trailing slash 1`] = `"/lorem/ipsum/"`;
+
+exports[`mapNodeValues() should fallback to an empty array 1`] = `Array []`;
+
+exports[`mapNodeValues() should handle array pairs 1`] = `
+Array [
+  Array [
+    "/lorem",
+    "ipsum",
+  ],
+]
+`;
+
+exports[`mapNodeValues() should handle objects 1`] = `
+Array [
+  Array [
+    "/lorem",
+    "ipsum",
+  ],
+]
+`;
+
+exports[`mergePaths() should merge paths 1`] = `
+Array [
+  "lorem",
+  "ipsum",
+]
+`;
+
+exports[`normalizePath() should normalize input 1`] = `"/lorem/ipsum"`;
+
+exports[`toPath() should convert other types into arrays 1`] = `
+Array [
+  Object {},
+]
+`;
+
+exports[`toPath() should handle arrays 1`] = `
+Array [
+  "lorem",
+  "ipsum",
+]
+`;
+
+exports[`toPath() should handle dot strings 1`] = `
+Array [
+  "lorem",
+  "ipsum",
+]
+`;
+
+exports[`toPath() should handle slash strings 1`] = `
+Array [
+  "lorem",
+  "ipsum",
+]
+`;

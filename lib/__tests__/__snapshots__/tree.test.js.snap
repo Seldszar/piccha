@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree should add a node 1`] = `
+Object {
+  "root": Object {
+    "children": Map {
+      "ipsum" => Object {
+        "children": Map {},
+        "path": "/ipsum",
+        "value": "dolor",
+      },
+    },
+    "path": "/",
+    "value": undefined,
+  },
+}
+`;
+
+exports[`Tree should create an empty tree 1`] = `
+Object {
+  "root": Object {
+    "children": Map {},
+    "path": "/",
+    "value": undefined,
+  },
+}
+`;
+
+exports[`Tree should delete a non-existent node 1`] = `false`;
+
+exports[`Tree should delete an existent node 1`] = `true`;
+
+exports[`Tree should emit a change event 1`] = `
+Object {
+  "newValue": "ipsum",
+  "oldValue": undefined,
+  "path": "/lorem",
+}
+`;
+
+exports[`Tree should merge values into the tree 1`] = `
+Object {
+  "root": Object {
+    "children": Map {
+      "ipsum" => Object {
+        "children": Map {},
+        "path": "/ipsum",
+        "value": "dolor",
+      },
+    },
+    "path": "/",
+    "value": undefined,
+  },
+}
+`;
+
+exports[`Tree should return a node 1`] = `
+Object {
+  "children": Map {},
+  "path": "/lorem",
+  "value": "ipsum",
+}
+`;
+
+exports[`Tree should return the string representation of the tree 1`] = `"[object Tree]"`;

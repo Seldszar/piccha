@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Node should delete a child node 1`] = `true`;
+
+exports[`Node should return a child node 1`] = `
+Object {
+  "children": Map {},
+  "path": "/lorem/ipsum",
+  "value": "dolor",
+}
+`;
+
+exports[`Node should return an existent node 1`] = `
+Object {
+  "children": Map {
+    "ipsum" => Object {
+      "children": Map {},
+      "path": "/lorem/ipsum",
+      "value": "dolor",
+    },
+  },
+  "path": "/lorem",
+  "value": "ipsum",
+}
+`;
+
+exports[`Node should return an non-existent node 1`] = `
+Object {
+  "children": Map {},
+  "path": "/ipsum",
+  "value": undefined,
+}
+`;
+
+exports[`Node should return the child nodes 1`] = `
+Map {
+  "ipsum" => Object {
+    "children": Map {},
+    "path": "/lorem/ipsum",
+    "value": "dolor",
+  },
+}
+`;
+
+exports[`Node should return the name of a child node 1`] = `"lorem"`;
+
+exports[`Node should return the name of the root node 1`] = `Symbol(root)`;
+
+exports[`Node should return the node parent 1`] = `
+Object {
+  "children": Map {
+    "ipsum" => Object {
+      "children": Map {},
+      "path": "/lorem/ipsum",
+      "value": "dolor",
+    },
+  },
+  "path": "/lorem",
+  "value": "ipsum",
+}
+`;
+
+exports[`Node should return the parent of the root node 1`] = `null`;
+
+exports[`Node should return the string representation of the node 1`] = `"[object Node]"`;
+
+exports[`Node should update a child node 1`] = `
+Object {
+  "children": Map {
+    "ipsum" => Object {
+      "children": Map {},
+      "path": "/lorem/ipsum",
+      "value": "dolor",
+    },
+  },
+  "path": "/lorem",
+  "value": "ipsum",
+}
+`;
+
+exports[`Node should update the value of the node 1`] = `
+Object {
+  "children": Map {
+    "ipsum" => Object {
+      "children": Map {},
+      "path": "/lorem/ipsum",
+      "value": "dolor",
+    },
+  },
+  "path": "/lorem",
+  "value": "dolor",
+}
+`;
