@@ -2,10 +2,10 @@
 
 ### Table of Contents
 
--   [ChangeEvent][1]
-    -   [Properties][2]
--   [ResolvableTreePath][3]
--   [ResolvableTreeValues][4]
+-   [ResolvableTreePath][1]
+-   [ResolvableTreeValues][2]
+-   [ChangeEvent][3]
+    -   [Properties][4]
 -   [Tree][5]
     -   [Parameters][6]
     -   [root][7]
@@ -39,29 +39,29 @@
     -   [toJSON][35]
     -   [toString][36]
 
-## ChangeEvent
-
-A change event.
-
-Type: [Object][37]
-
-### Properties
-
--   `path` **[String][38]** the path
--   `oldValue` **any** the old value
--   `newValue` **any** the new value
-
 ## ResolvableTreePath
 
 Resolvable tree path.
 
-Type: ([String][38] \| [Array][39]&lt;[String][38]>)
+Type: ([String][37] \| [Array][38]&lt;[String][37]>)
 
 ## ResolvableTreeValues
 
 Resolvable tree values.
 
-Type: ([Object][37] \| [Array][39]&lt;\[[String][38], any]>)
+Type: ([Object][39] \| [Array][38]&lt;\[[String][37], any]>)
+
+## ChangeEvent
+
+A change event.
+
+Type: [Object][39]
+
+### Properties
+
+-   `path` **[String][37]** the path
+-   `oldValue` **any** the old value
+-   `newValue` **any** the new value
 
 ## Tree
 
@@ -124,13 +124,13 @@ Returns **[Tree][43]** the tree.
 
 Returns the JSON object.
 
-Returns **[Object][37]** the JSON object.
+Returns **[Object][39]** the JSON object.
 
 ### toString
 
 Returns the identity.
 
-Returns **[String][38]** the identity.
+Returns **[String][37]** the identity.
 
 ## Tree#change
 
@@ -145,13 +145,13 @@ A node.
 ### Parameters
 
 -   `tree` **[Tree][43]** the tree
--   `path` **[String][38]** the path
+-   `path` **[String][37]** the path
 
 ### name
 
 Gets the node name.
 
-Type: [String][38]
+Type: [String][37]
 
 ### value
 
@@ -177,7 +177,7 @@ Type: [Node][41]?
 
 Gets the node childrens.
 
-Type: [Map][46]&lt;[String][38], [Node][41]>
+Type: [Map][46]&lt;[String][37], [Node][41]>
 
 ### tree
 
@@ -189,7 +189,7 @@ Type: [Tree][43]
 
 The path.
 
-Type: [String][38]
+Type: [String][37]
 
 ### get
 
@@ -226,21 +226,21 @@ Returns **[Boolean][44]** `true` if the node has been deleted, otherwise `false`
 
 Returns the JSON object.
 
-Returns **[Object][37]** the JSON object.
+Returns **[Object][39]** the JSON object.
 
 ### toString
 
 Returns the identity.
 
-Returns **[Object][37]** the identity.
+Returns **[Object][39]** the identity.
 
-[1]: #changeevent
+[1]: #resolvabletreepath
 
-[2]: #properties
+[2]: #resolvabletreevalues
 
-[3]: #resolvabletreepath
+[3]: #changeevent
 
-[4]: #resolvabletreevalues
+[4]: #properties
 
 [5]: #tree
 
@@ -306,11 +306,11 @@ Returns **[Object][37]** the identity.
 
 [36]: #tostring-1
 
-[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[38]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[39]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[39]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 [40]: #resolvabletreevalues
 
